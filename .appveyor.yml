@@ -12,6 +12,7 @@ install:
   # запускаем SUT (& означает, что в фоновом режиме - не блокируем терминал для запуска тестов)
   - java -jar ./artifacts/app-ibank.jar -P:profile=test &
   - chmod +x gradlew
+  - java -jar ./artifacts/slf4j-nop-2.0.7.jar &
 
 build_script:
     - ./gradlew test --info
