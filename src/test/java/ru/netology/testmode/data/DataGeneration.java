@@ -1,4 +1,5 @@
 package ru.netology.testmode.data;
+
 import com.github.javafaker.Faker;
 import com.google.gson.Gson;
 import io.restassured.builder.RequestSpecBuilder;
